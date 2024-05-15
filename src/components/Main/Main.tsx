@@ -80,7 +80,6 @@ const Main = () => {
       const { data } = response;
       setSearchResults(data.results || []);
       setSearched(true);
-      // Оновлюємо сторінку після виконання пошуку
       setCurrentPage(1);
     } catch (error) {
       console.error("Error searching characters:", error);
